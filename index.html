@@ -47,11 +47,18 @@
 </head>
 
 <body>
-  <header>
-    
+  <header class="flex justify-between max-w-6xl mx-auto pt-8 items-center">
+    <img class="w-16" src="assets/images/logo.svg" alt="logo">
+    <ul class="flex text-blue-dark font-400 gap-x-8">
+      <li> <a class="hover:text-secondary duration-300 ease-in" href="#">Home</a></li>
+      <li> <a class="hover:text-secondary duration-300 ease-in" href="#">New</a></li>
+      <li> <a class="hover:text-secondary duration-300 ease-in" href="#">Popular</a></li>
+      <li> <a class="hover:text-secondary duration-300 ease-in" href="#">Trending</a></li>
+      <li> <a class="hover:text-secondary duration-300 ease-in" href="#">Categories</a></li>
+    </ul>
   </header>
   <main
-    class="max-w-6xl w-[90%] grid md:grid-cols-[minmax(374px,_1fr)_minmax(374px,_1fr)_minmax(374px,_1fr)] mx-auto md:gap-x-6 md:grid-rows-10 py-12">
+    class="max-w-6xl w-[90%] grid md:grid-cols-[minmax(200px,_1fr)_minmax(200px,_1fr)_minmax(200px,_1fr)] mx-auto md:gap-x-6 md:grid-rows-10 py-12">
 
     <picture class="md:col-span-2 md:row-start-1 md:row-end-5 object-cover">
       <source srcset="assets/images/image-web-3-desktop.jpg" media="(min-width: 600px)" />
@@ -91,11 +98,12 @@
       </div>
     </aside>
 
-    <section class="md:row-start-9 md:row-end-11 md:col-span-full md:grid md:grid-cols-subgrid md:grid-rows-subgrid md:mb-0 mb-8">
+    <section
+      class="md:row-start-9 md:row-end-11 md:col-span-full md:grid md:grid-cols-subgrid md:grid-rows-subgrid md:mb-0 mb-8">
       <div class="flex gap-x-6 mb-8 md:mb-0 md:row-span-full">
         <img class="object-cover w-2/5" src="assets/images/image-retro-pcs.jpg" alt="pc">
         <div>
-          <span class="text-[2.488rem] font-800">01</span>
+          <span class="text-[2.488rem] font-800 text-secondary">01</span>
           <h4 class="my-2"> Reviving Retro PCs</h4>
           <p class=""> What happens when old PCs are given modern upgrades?
           </p>
@@ -105,7 +113,7 @@
       <div class="flex gap-x-6 mb-8 md:mb-0 md:row-span-full">
         <img class="object-cover w-2/5" src="assets/images/image-top-laptops.jpg" alt="pc">
         <div>
-          <span class="text-[2.488rem] font-800">02</span>
+          <span class="text-[2.488rem] font-800 text-secondary">02</span>
           <h4 class="my-2"> Top 10 Laptops of 2022
           </h4>
           <p class=""> Our best picks for various needs and budgets.
@@ -116,7 +124,7 @@
       <div class="flex gap-x-6 md:row-span-full">
         <img class="object-cover w-2/5" src="assets/images/image-gaming-growth.jpg" alt="pc">
         <div>
-          <span class="text-[2.488rem] font-800">03</span>
+          <span class="text-[2.488rem] font-800 text-secondary">03</span>
           <h4 class="my-2"> The Growth of Gaming
           </h4>
           <p class=""> How the pandemic has sparked fresh opportunities.
@@ -126,13 +134,6 @@
     </section>
 
   </main>
-  <!-- 
-  Home
-  New
-  Popular
-  Trending
-  Categories -->
-
 </body>
 
 </html>
